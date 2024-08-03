@@ -52,8 +52,9 @@ For financial researches, we need equity characteristics. This repository is a t
 
 1. run accounting_60_hxz.py
 2. run all the single characteristic files (you can run them in parallel)
-3. run merge_chars.py
-4. run impute_rank_output_bckmk.py (you may want to comment the part of sp1500 in this file if you just need the all stocks version)
+3. run char_file_stats.py and check for missing .feather file. (Run anytime to see .feather stats for rows, cols, bytes)
+4. run merge_chars.py
+5. run impute_rank_output_bckmk.py (you may want to comment the part of sp1500 in this file if you just need the all stocks version)
 
 ## Outputs
 
