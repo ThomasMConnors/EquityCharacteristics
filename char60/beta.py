@@ -26,12 +26,12 @@ DATA_START_DATE = '01/01/1959'
 # I suggest current year minues one for quick debug cycles.
 
 if __name__ == '__main__':
+    
     ###################
     # Connect to WRDS #
     ###################
-    #conn = wrds.Connection()
-    conn = wrds.Connection(wrds_username="mbeisenbek", wrds_password="ThanksProfConnors123!", autoconnect=True, verbose=True)
-
+    conn = wrds.Connection()
+    
     # CRSP Block
     crsp = conn.raw_sql(f"""
                         select a.permno, a.date, a.ret, b.rf, b.mktrf, b.smb, b.hml
